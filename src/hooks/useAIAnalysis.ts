@@ -57,7 +57,7 @@ export function useAIAnalysis(documentId: string | null) {
       if (!documentId) return mockAnalysis;
       
       try {
-        const response = await fetch('http://localhost:8000/analise', {
+        const response = await fetch('https://i2a2-aiops-agentes-de-ti-api2.bysger.easypanel.host/analise', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

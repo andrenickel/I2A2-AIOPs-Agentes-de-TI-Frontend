@@ -118,7 +118,7 @@ const FileUpload = memo(() => {
 
     try {
       // Enviar sem aguardar resposta (fire-and-forget)
-      fetch('http://localhost:8000/ingest', {
+      fetch('https://i2a2-aiops-agentes-de-ti-api2.bysger.easypanel.host/ingest', {
         method: 'POST',
         body: formData,
       }).catch(() => {

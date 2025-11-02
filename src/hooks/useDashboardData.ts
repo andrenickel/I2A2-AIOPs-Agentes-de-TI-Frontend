@@ -95,7 +95,7 @@ export function useDashboardData() {
     queryKey: ['dashboard-data'],
     queryFn: async () => {
       try {
-        const response = await fetch('http://localhost:8000/dashboard');
+        const response = await fetch('https://i2a2-aiops-agentes-de-ti-api2.bysger.easypanel.host/dashboard');
         if (!response.ok) {
           return mockData;
         }

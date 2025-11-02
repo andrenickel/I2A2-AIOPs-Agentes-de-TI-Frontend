@@ -11,7 +11,7 @@ export function useHomeStats() {
     queryKey: ['home-stats'],
     queryFn: async () => {
       try {
-        const response = await fetch('http://localhost:8000/home');
+        const response = await fetch('https://i2a2-aiops-agentes-de-ti-api2.bysger.easypanel.host/home');
         if (!response.ok) {
           throw new Error('Failed to fetch home stats');
         }
